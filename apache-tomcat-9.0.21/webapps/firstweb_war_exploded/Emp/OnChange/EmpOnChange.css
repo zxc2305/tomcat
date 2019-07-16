@@ -1,0 +1,20 @@
+#test2{
+    display:none;
+}
+.test1{
+    width:100px;
+    height: 100px;
+    background-color: #5C874A;
+}
+.test2{
+    width:100px;
+    height: 100px;
+    background-color: #66D9B1;
+}
+
+#newApp{display: none}
+
+#NewMessage{display:none;}
+#NewTest{display: none;}
+#NewType1{display:none;}
+#NewType2{display: none;}

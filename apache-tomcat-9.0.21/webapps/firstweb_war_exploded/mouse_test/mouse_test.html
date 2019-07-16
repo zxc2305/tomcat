@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标跟随测试</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            list-style: none
+        }
+        div{
+            position:absolute;
+            width:20px;
+            height:20px;
+            background-color:red;
+            left:60px;
+            top:0px;
+        }
+
+    </style>
+
+</head>
+<body style="height:1000px; width:1000px;">  <div >
+    0
+</div>
+<div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    0
+</div><div >
+    1
+</div><div >
+    1
+</div><div >
+    1
+</div><div >
+    1
+</div><div >
+    1
+</div><div >
+    1
+</div> </body>
+</html>
+<script type="text/javascript">
+
+    window.onload = function(){
+        document.body.onmousemove = function(event){
+            let evt = event || window.event;
+            //改变除了第一方块外的其它方块
+            let unitDivs = document.getElementsByTagName("div");
+            for(let i=unitDivs.length-1;i>0;i--){
+                unitDivs[i].style.left = unitDivs[i-1].style.left;
+                unitDivs[i].style.top = unitDivs[i-1].style.top;
+            }
+            //改变第一个方块的位置
+            unitDivs[0].style.left = evt.pageX+"px";
+            unitDivs[0].style.top = evt.pageY+"px";
+        }
+    }
+
+</script>

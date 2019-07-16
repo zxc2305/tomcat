@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newVue</title>
+    <script src="./VUE/vue.js"></script>
+    <script src="./js/jquery-2.2.0.min.js"></script>
+    <script>
+        var name;
+        var sex;
+        var age;
+        // var newdata;
+        function newRepeat() {
+            //$("#btn").click(function(){
+
+            // });
+
+        }
+    </script>
+</head>
+<body>
+<div id="newApp">
+    <p>{{VueName}}</p>
+    <p>{{VueAge}}</p>
+    <p>{{VueSex}}</p>
+</div>
+<div id="app">
+    <p>{{ message }}</p>
+
+    <input type="text" v-model="message"/>
+    <p>{{test}}</p>
+    <input type="text" v-model="test"/>
+</div>
+<script>
+    var exampleData={
+        message:'ii',
+        test:'ll'
+    }
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    new Vue({
+        el: '#app',
+        data: exampleData
+    })
+</script>
+<div id="example">
+    <input type="text" v-model="items.type1" ref="type1"/>
+    <input type="text" v-model="items.type2" ref="type2"/>
+    <div class="show">输入框一的内容：{{items.type1}}</div>
+    <div class="show">输入框二的内容：{{items.type2}}</div>
+</div>
+<script>
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    var planData={
+        VueName: "name",
+        VueAge: "20",
+        VueSex: "男"
+    }
+    var vm=new Vue({
+        el: '#newApp',
+        data: planData
+
+    })
+
+    var example1 = new Vue({
+        el: '#example',
+        data: {
+            items: {
+                type1:'第一个输入框',
+                type2:'第二个输入框'
+            }
+        },
+        ready:function(){ },
+        watch:{
+            items:{
+                handler:function(val,oldval){
+                    console.log(this.$refs.type1.value);
+                    //////////////////////////////////
+                    var url = "EmpRoleAjaxVueQuery";
+                    $.ajax({
+                        url:url,
+                        type:"post",
+                        dataType:"json",
+                        data:{
+                            VueId:this.$refs.type1.value,
+                            VueRoleName:this.$refs.type2.value,
+                            VuePersonnel:this.$refs.type2.value
+                        },
+                        error:function(XMLHttpRequest, textStatus, errorThrown){
+                            alert(XMLHttpRequest);
+                            alert(textStatus);
+                            alert(errorThrown);
+                        },
+                        success:function(data){
+                            // alert("yes");
+                            $.each(data,function(idx,obj){
+
+                                var li = document.createElement("li");
+                                li.innerHTML = "<a>" + obj.id +"<br>"+obj.roleName+"<br>"+obj.personnel+ "</a>";
+                                ///document.getElementById("ul1").appendChild(li);
+                                name=obj.id;
+                                age=obj.roleName;
+                                sex=obj.personnel;
+
+/*
+                                var li = document.createElement("li");
+                                li.innerHTML = "<a>" + obj.name +"<br>"+obj.age+"<br>"+obj.sex+ "</a>";
+                                ///document.getElementById("ul1").appendChild(li);
+                                name=obj.name;
+                                age=obj.age;
+                                sex=obj.sex;
+                                */
+                                // alert(name+age+sex);
+                                exampleData={
+                                    VueName:name,
+                                    VueSex:sex,
+                                    VueAge:age
+
+                                };
+                                vm.VueName=name
+                                // vm.$el.textContent==='new message'
+                                Vue.nextTick(function () {
+                                    vm.$el.textContent===name
+                                })
+                                vm.VueSex=sex
+                                // vm.$el.textContent==='new message'
+                                Vue.nextTick(function () {
+                                    vm.$el.textContent===sex
+                                })
+                                vm.VueAge=age
+                                // vm.$el.textContent==='new message'
+                                Vue.nextTick(function () {
+                                    vm.$el.textContent===age
+                                })
+                                document.getElementById("newApp").style.display="block";
+                            });
+                        }
+                    });
+                    //////////////////////////////////
+
+
+                    console.log(this.$refs.type2.value);
+                },
+                deep:true
+            } },
+        methods:{
+        }
+    }) </script>
+</body>
+</html>

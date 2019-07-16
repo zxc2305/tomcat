@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document11</title>
+
+    <style>
+        #test2{
+display:none;
+        }
+        .test1{
+            width:100px;
+            height: 100px;
+            background-color: #5C874A;
+        }
+        .test2{
+            width:100px;
+            height: 100px;
+            background-color: #66D9B1;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function myFunction() {
+            document.getElementById("test1").style.display = "none";
+            document.getElementById("test2").style.display = "block";
+        }
+        function youFunction() {
+            document.getElementById("test1").style.display = "block";
+            document.getElementById("test2").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+<div class="test1" id="test1" alt="" onclick="myFunction()">
+    {{123}}
+</div>
+<div class="test2" id="test2" alt="" onclick="youFunction()">
+    <input type="text" value="1234">
+</div>
+</body>
+</html>

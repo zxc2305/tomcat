@@ -1,0 +1,48 @@
+hr {color: sienna;}
+p {margin-left: 20px;}
+body {background-image: url("images/back40.gif");}
+a {color:red;text-decoration: none;}
+.floatleft {
+float:left;
+}
+.floatright {
+float:right;
+}
+.header {
+  color: red;
+  text-align: left;
+  font-size: 8pt;
+  width:728px;
+  height:90px;
+  margin:0 auto;
+  }
+.main {
+  color: red;
+  text-align: left;
+  font-size: 8pt;
+  background-color: gray;
+  padding: 80px;
+  }
+.mainmenu {
+	color: red;
+	text-align: center;
+	font-size: 8pt;
+  width:728px;
+  height:90px;
+  margin:0 auto;
+  }
+.left {
+  color: red;
+  text-align: left;
+  font-size: 8pt;
+  }
+.content {
+  color: red;
+  text-align: left;
+  font-size: 6pt;
+  }
+.under {
+  color: red;
+  text-align: left;
+  font-size: 8pt;
+  }

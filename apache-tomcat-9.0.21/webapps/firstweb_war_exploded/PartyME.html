@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)./PartyM -->
+<html data-dpr="1" style="font-size: 52.2667px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="content-language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="企业站,关键字">
+    <meta name="description" content="企业站,关键字">
+    <meta name="author" content="杭州一丢丢管理咨询信息技术有限公司-高端网站建设-http://www.donniy.com">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>杭州久另其文化创意有限公司</title>
+    <link href="./favicon.ico" rel="shortcut icon">
+    <link href="./PartyME_files/styleM" rel="stylesheet">
+
+    <script src="./PartyME_files/jqueryM"></script>
+
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].init();
+    </script>
+    <script src="./PartyME_files/share.js"></script><script src="./PartyME_files/share.js"></script><link rel="stylesheet" href="./PartyME_files/share_style2_24.css"></head>
+<body style="font-size: 18px;">
+
+
+<header class="header">
+    <div class="main-wrap f-cb">
+        <h1 class="fl logo">
+            <a href="./IndexME.html">
+                <img src="./PartyME_files/logo.jpg" alt="">
+            </a>
+        </h1>
+        <div class="fr nav-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <a class="en fr" target="_blank" href="./">中文</a>
+    </div>
+    <div class="sub-menu">
+        <ul>
+            <li><a class="tit" href="./IndexME.html">Home</a></li>
+            <li>
+                <span class="tit sub-tit">About us</span>
+                <div class="sec-list">
+                    <p><a href="./AboutME.html" title="">Who we are</a></p>
+                    <p><a href="./IdeaME.html" title="">Idea</a></p>
+                    <p><a href="./TeamME.html" title="">Our team</a></p>
+                    <!-- <p><a href="/StrategyME.html" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactME.html" title="">Contact us</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Our service</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceME.html" title="">Service</a></p>
+                    <p><a href="./CaseME.html" title="">Case</a></p>
+                    <p><a href="./ResearchME.html" title="">Research Center</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">News center</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListME.html" title="">News</a></p>
+                    <p><a href="./MagazineME.html" title="">Magazines</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">We need you</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitME.html" title="">Recruitment Information</a></p>
+                    <p><a href="./PersonnelME.html" title="">Talent view</a></p>
+                    <p><a href="./OccupationME.html" title="">Career development</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Social responsibility</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyME.html" title="">Social responsibility</a></p>
+                    <p><a href="./PublicME.html" title="">Public welfare</a></p>
+                    <p><a href="./PartyME.html" title="">Party branch</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorME.html">Investor relations</a></li>
+        </ul>
+    </div>
+    <span class="m-close-search"></span>
+</header>
+<div class="search-bg"></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+    $(function(){
+        $("header .nav-btn").on('click', function() {
+            var _this = $(this);
+            if (!$(this).hasClass('hover')) {
+                $(this).addClass('hover');
+                $(this).children('.line1').stop(true,true).transition({rotate: 45}, 300);
+                $(this).children('.line2').stop(true,true).fadeOut(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: -45}, 300,function(){
+                    _this.addClass('active');
+                });
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeIn();
+                $("header .list-cont").addClass('active');
+                $("body,html").stop(true,true).addClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeIn();
+            }else{
+                $(this).removeClass('hover');
+                $(this).removeClass('active');
+                $(this).children('.line1').stop(true,true).transition({rotate: 0}, 300);
+                $(this).children('.line2').stop(true,true).fadeIn(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: 0}, 300);
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeOut();
+                $("header .list-cont").removeClass('active');
+                $("body,html").stop(true,true).removeClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeOut();
+            }
+        });
+        $("header .sub-menu .sub-tit").on('click', function() {
+            if ($(this).siblings('.sec-list').is(':hidden')){
+                $(this).addClass('on');
+                $(this).siblings('.sec-list').stop().slideDown();
+                $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+            }else{
+                $(this).removeClass('on');
+                $(this).siblings('.sec-list').stop().slideUp();
+            }
+        });
+        $("header .search-btn").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().show();
+        });
+        $(".m-close-search").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().hide();
+        })
+    })
+</script>
+
+
+
+
+
+
+<div class="banner-nav">
+    <div class="n-banner" style="background: url(StorageFiles/2017/4/11/ce14933e-6084-4a8e-ad1a-891aedec7db0.jpg) no-repeat center center;">
+        <div class="top" style="padding-top: 4.5rem;">
+            <span class="line fl"></span><span class="sp1 fl">Social<br>responsibility</span>
+        </div>
+        <!-- <div class="square_container">
+            <div class="square_liner square_liner_1"></div>
+            <div class="square_liner square_liner_2"></div>
+            <div class="square_liner square_liner_3"></div>
+            <div class="square_liner square_liner_4"></div>
+            <div class="square">
+                <span>党</span>
+                <span>建</span>
+                <span>活</span>
+                <span>动</span>
+                <span class="s6">
+                    <img src="/Resources/Web/Images/pic6.png" alt="">
+                </span>
+            </div>
+        </div> -->
+    </div>
+
+
+    <div class="about-nav">
+        <div class="tit sub-tit f-cb">
+            <span class="fl">Party branch</span>
+            <div class="ac-ln-menucta fr"></div>
+        </div>
+        <ul class="sec-list f-cb">
+            <li>
+                <a href="./SociologyME.html" title="">Social responsibility</a>
+            </li>
+            <li>
+                <a href="./PublicME.html" title="">Public welfare</a>
+            </li>
+            <li>
+                <a href="./PartyME.html" title="">Party branch</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(function(){
+            $(".about-nav .sub-tit").on('click', function() {
+                if ($(this).siblings('.sec-list').is(':hidden')){
+                    $(this).addClass('on');
+                    $(this).siblings('.sec-list').stop().slideDown();
+                    $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+                }else{
+                    $(this).removeClass('on');
+                    $(this).siblings('.sec-list').stop().slideUp();
+                }
+            });
+        })
+    </script>
+
+</div>
+<div class="n-public">
+    <div class="lista pa6">
+        <div class="n-top" style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="h"><span class="i">Party</span>branch</div>
+            <!-- <div class="line"></div>
+            <p>党支部介绍</p> -->
+        </div>
+        <div class="dl-x f-cb" style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="dd">
+                <img src="./PartyME_files/40258759-7a12-4802-bfe5-f0758723ef70.jpg" alt="">
+            </div>
+            <div class="dt">
+                <div class="h">七次元党支部介绍</div>
+                <div class="line"></div>
+                <div class="p">
+                    杭州市双重管理‘两新’党组织<br>
+                    杭州市首届两新党务工作者协会会员单位<br>
+                    杭州市双强百佳党组织<br>
+                    上城区优秀基层党组织<br>
+                    南星街道党员先锋岗
+                </div>
+            </div>
+        </div>
+        <div class="f9-bg" style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="textx">
+                <div class="p">
+                    <p>
+                        七次元文化党支部成立于2010年4月16日，支部目前现有党员31人，平均年龄28.74岁，本科学历以上占90.3%，任中高管理层党员有5人。
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>
+                        公司党支部作为“杭州市双重管理‘两新’党组织”“杭州市首届两新党务工作者协会会员单位”，是杭州市“双品牌”示范点之一，同时也作为省级“发展强、党建强”先进企业重点培育对象，先后被评为“杭州市双强百佳党组织”“上城区优秀基层党组织”“南星街道党员先锋岗”等荣誉称号。
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>
+                        作为非公企业党组织，支部积极开展“三严三实”活动，以“党徽在岗位上闪光”为主题，紧紧抓住党组织的功能发挥这个关键环节，增强企业党建活力和生命力。先后建立了“七次元IMO党员群”、“七次元内刊”、“党建室”、“党员活动室”、“党群沙龙”、“党员微信群”等党建阵地。在省委组织部举办的“双强学堂”党建微博话题互动中，支部代表杭州市主持的《舌尖上的七次元食堂》互动话题，被省委两新工委、《非公企业党建》杂志、中国非公企业党建网评为“好创意”奖。
+                    </p>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <p>
+                        支部的党建工作得到上级领导的肯定。现中宣部副部长、时任省委常委市委书记黄坤明；省委组织部常务副部长于跃敏；省委组织部副部长庄跃成、省委组织部马小秋部委、中央组织部党建研究所刘大秀主任以及市委组织部长张仲灿、副部长戴文昌等各级领导先后考察指导党建工作。
+                    </p>
+                </div>
+                <div class="imgbox">
+                    <img src="./PartyME_files/f22b8f2c-6e96-4057-b504-8393f6e9f7c5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="listb pa6">
+        <div class="n-top pa85">
+            <div class="h"><span class="i">Party</span>activities</div>
+            <!-- <div class="line"></div>
+            <p>党建活动</p> -->
+        </div>
+        <div class="ulbox">
+            <div class="li lia f-cb">
+                <a href="./PartyInfoM?id=8543d723-b1a0-42be-8f03-622fc7169d46" title="">
+                    <div class="dl w1200 f-cb">
+                        <div class="dt fl">
+                            <img src="./PartyME_files/17bb1da6-c300-4da9-b33c-e0cfe2345dde.png" alt="">
+                        </div>
+                        <div class="time fl">
+                            <div class="r">16</div>
+                            <div class="y">
+                                <p>April</p>
+                                <p>2017</p>
+                            </div>
+                        </div>
+                        <div class="dd fl">
+                            <div class="h">创新演绎“三学三思三问</div>
+                            <div class="p">
+                                <p>通过群众路线教育实践活动，从细微处体现共产党人无私奉献的情怀，从平凡中彰显共产党人全心全意为人民服务的真谛，通过情景剧党课用角色参与、互动的方式，坚定了党性。</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="li f-cb">
+                <a href="./PartyInfoM?id=4c72068e-8d22-48a4-9382-5dfd32e65140" title="">
+                    <div class="dl w1200 f-cb">
+                        <div class="dt fl">
+                            <img src="./PartyME_files/dfa52361-bd38-4e05-b534-970622c68b91.png" alt="">
+                        </div>
+                        <div class="time fl">
+                            <div class="r">11</div>
+                            <div class="y">
+                                <p>April</p>
+                                <p>2017</p>
+                            </div>
+                        </div>
+                        <div class="dd fl">
+                            <div class="h">深入开展“群众路线教育实践活动”系列报道</div>
+                            <div class="p">
+                                <p>近期，区政协主席余勇深入南星街道以实地走访、召开座谈会的形式调研群众路线活动开展情况。座谈会上，余勇与街道、社区代表及七次元文化、龙源等企业代表就困难问题和意见建议进行了深入交流。</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="li lia f-cb">
+                <a href="./PartyInfoM?id=9420b66f-f905-4fa8-b352-eeb02ed47d3a" title="">
+                    <div class="dl w1200 f-cb">
+                        <div class="dt fl">
+                            <img alt="">
+                        </div>
+                        <div class="time fl">
+                            <div class="r">24</div>
+                            <div class="y">
+                                <p>March</p>
+                                <p>2017</p>
+                            </div>
+                        </div>
+                        <div class="dd fl">
+                            <div class="h">杭州市两新组织党务工作者协会召开一届五次会员大会</div>
+                            <div class="p">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="li f-cb">
+                <a href="./PartyInfoM?id=87b0ff20-5acb-45aa-8f13-accefd66a47a" title="">
+                    <div class="dl w1200 f-cb">
+                        <div class="dt fl">
+                            <img src="./PartyME_files/7e39cb9a-7e5d-4737-9a9f-72d624d38de1.jpg" alt="">
+                        </div>
+                        <div class="time fl">
+                            <div class="r">19</div>
+                            <div class="y">
+                                <p>February</p>
+                                <p>2016</p>
+                            </div>
+                        </div>
+                        <div class="dd fl">
+                            <div class="h">党建活动  喜迎峰会 欢度元宵 共享文明</div>
+                            <div class="p">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="pagebox">
+            <div class="page">
+
+
+                <div class="page">
+                    <a href="./PartyM?page=1" class="prev">&lt;</a>
+                    <a href="./PartyM?page=1" class="active">1</a>
+                    <a href="./PartyM?page=1" class="next">&gt;</a>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<link href="./PartyME_files/swiperM" rel="stylesheet">
+
+<script src="./PartyME_files/swiper-minM"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $(".about-nav .sub-tit span").text("Party branch");
+        var k = $(".n-public .listb .li").length;
+        setTimeout(function(){
+            Enter($('.n-public .lista .n-top'),"Y","0",1,800,250,function(){
+                Enter($('.n-public .lista .dl-x').eq(0),"Y","0",1,850,150,function(){
+                    Enter($('.n-public .lista .f9-bg').eq(0),"Y","0",1,1000)
+                })
+            })
+        },500)
+
+        $(window).scroll(function(){
+            var top=$(window).scrollTop();
+            var h=$(window).height();
+            if(($('.n-public .listb .n-top').offset().top-2*h/2.5)<=top){
+                Enter($('.n-public .listb .n-top'),"Y","0",1,800,0,function(){
+                    Enter($('.n-public .listb .li').eq(0),"Y","0",k,650,200)
+                })
+            }
+        })
+    })
+</script>
+
+
+
+<footer>
+    <div class="sub-menu">
+        <ul>
+            <li>
+                <span class="tit sub-tit">About us</span>
+                <div class="sec-list">
+                    <p><a href="./AboutME.html" title="">Who we are</a></p>
+                    <p><a href="./IdeaME.html" title="">Idea</a></p>
+                    <p><a href="./TeamME.html" title="">Our team</a></p>
+                    <!-- <p><a href="/StrategyME.html" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactME.html" title="">Contact us</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Our service</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceME.html" title="">Service</a></p>
+                    <p><a href="./CaseME.html" title="">Case</a></p>
+                    <p><a href="./ResearchME.html" title="">Research Center</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">News center</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListME.html" title="">News</a></p>
+                    <p><a href="./MagazineME.html" title="">Magazines</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">We need you</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitME.html" title="">Recruitment Information</a></p>
+                    <p><a href="./PersonnelME.html" title="">Talent view</a></p>
+                    <p><a href="./OccupationME.html" title="">Career development</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Social responsibility</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyME.html" title="">Social responsibility</a></p>
+                    <p><a href="./PublicME.html" title="">Public welfare</a></p>
+                    <p><a href="./PartyME.html" title="">Party branch</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorME.html">Investor relations</a></li>
+        </ul>
+    </div>
+    <div class="botmid">
+        <div class="bdsharebuttonbox bdshare-button-style2-24" data-bd-bind="1562669303241">
+            <a href="./PartyM#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="./PartyM#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        </div>
+    </div>
+    <div class="bot">
+        <p>
+            Copyright © SevenDimension Media Co. Ltd. All right reserved <br>
+            <a target="_blank" title="Powered by" href="http://www.donniy.com/" class="t-c">Powered by</a>：
+            <a target="_blank" title="DONNIY" href="http://www.donniy.com/" class="t-c">DONNIY</a>
+        </p>
+    </div>
+</footer>
+<script>
+    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){})
+    $("footer .sub-menu .sub-tit").on('click', function() {
+        if ($(this).siblings('.sec-list').is(':hidden')){
+            $(this).addClass('on');
+            $(this).siblings('.sec-list').stop().slideDown();
+            $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+        }else{
+            $(this).removeClass('on');
+            $(this).siblings('.sec-list').stop().slideUp();
+        }
+    });
+</script>
+
+
+
+
+
+</body></html>
+

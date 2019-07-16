@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajaxVueTest</title>
+    <script src="http://localhost:8080/VUE/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <p>{{ message }}</p>
+    <p>{{test}}</p>
+</div>
+
+<script>
+    var exampleData={
+        message:'ii',
+        test:'ll'
+    }
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    var vm=new Vue({
+        el: '#app',
+        data: exampleData
+    })
+    vm.message='new message'
+   // vm.$el.textContent==='new message'
+    Vue.nextTick(function () {
+        vm.$el.textContent==='new message'
+
+    })
+</script>
+
+</body>
+</html>

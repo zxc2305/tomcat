@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <!--
+        <script src="http://localhost:8081/webDemo/firstweb/web/VUE/vue.js"></script>
+        <script src="http://localhost:8081/webDemo/firstweb/web/VUE/axios.js"></script>
+    -->
+
+    <script src=".//VUE/vue.js"></script>
+    <script src=".//VUE/axios.js"></script>
+</head>
+
+<body>
+<!--这是我们的View-->
+<div id="app">
+    <p>{{ message }}</p>
+
+    <input type="text" v-model="message"/>
+    <p>{{test}}</p>
+    <input type="text" v-model="test"/>
+</div>
+
+<div class="hello">
+    <ul>
+        <form>
+            <input type="text" value="" v-model="name" placeholder="请输入用户名">
+            <input type="text" value="" v-model="age" placeholder="请输入年龄">
+            <!-- <input type="file" @change="getFile($event)">
+            -->
+            <button @click="submitForm($event)">提交</button>
+        </form>
+
+    </ul>
+</div>
+</body>
+
+<script>
+    var exampleData={
+        message:'ii',
+        test:'ll'
+    }
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    new Vue({
+        el: '#app',
+        data: exampleData
+
+    })
+
+    window.onload = function () {
+        Vue.prototype.$http = axios;
+        new Vue({
+            el: 'form',
+            data: {
+                name: 'zlp',
+                age: '111',
+                // file: ''
+            },
+            methods: {
+                /*
+                getFile(event) {
+                    this.file = event.target.files[0];
+                    console.log(this.file);
+                },
+                */
+                submitForm(event) {
+                    event.preventDefault();
+                    let formData = new FormData();
+                    formData.append('name', this.name);
+                    formData.append('pwd', this.age);
+                    // formData.append('file', this.file);
+
+                    let config = {
+                        headers: {
+                           //'Content-Type':'application/x-www-form-urlencoded'
+                           // 'Content-Type':'text/plain'
+                            //'Content-Type': undefined
+                            'Content-Type': 'multipart/form-data'
+                        }
+                    }
+
+                    this.$http.post('http://localhost:8080/welcomeQuery', formData, config).then(function (res) {
+                        if (res.status === 2000) {
+                            /*这里做处理*/
+                        }
+                    })
+                }
+            }
+        })
+    }
+
+</script>
+</html>

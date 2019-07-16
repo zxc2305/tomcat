@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 分页的状态</title>
+
+    <link rel="stylesheet" href="./Home_files/bootstrap.min.css">
+    <script src="./VUE/vue.js"></script>
+    <script src="./js/jquery-2.2.0.min.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var name;
+        var sex;
+        var age;
+        var vm;
+        var newdata;
+        $(function(){
+            //$("#btn").click(function(){
+            var url = "EmpPublicnameAjaxVueQuery";
+
+            $.ajax({
+                url:url,
+                type:"post",
+                dataType:"json",
+                error:function(XMLHttpRequest, textStatus, errorThrown){
+                    alert(XMLHttpRequest);
+                    alert(textStatus);
+                    alert(errorThrown);
+                },
+                success:function(data){
+                    //alert(data);
+                    $.each(data,function(idx,obj){
+                        //  var li = document.createElement("li");
+                        //  li.innerHTML = "<a>" + obj.name +"<br>"+obj.age+"<br>"+obj.sex+ "</a>";
+                        ///document.getElementById("ul1").appendChild(li);
+                        name=obj.name;
+                        age=obj.age;
+                        sex=obj.sex;
+                        newdata={
+                            VueName:name,
+                            VueSex:sex,
+                            VueAge:age
+                        };
+                        vm=new Vue({
+                            el:'#newApp',
+                            data:newdata,
+                            methods:{
+
+                                ready:function(){
+                                    Vue.set(newdata, 'VueAge', 'age');
+                                    Vue.set(newdata, 'VueName', 'name');
+                                    Vue.set(newdata, 'VueSex', 'sex');
+                                    alert("执行到这里了！");
+                                }
+                            }
+                        });
+
+                        vm.VueName='new message'
+                        // vm.$el.textContent==='new message'
+                        Vue.nextTick(function () {
+                            vm.$el.textContent==='new message'
+                        })
+                        vm.VueSex='new message'
+                        // vm.$el.textContent==='new message'
+                        Vue.nextTick(function () {
+                            vm.$el.textContent==='new message'
+                        })
+                        vm.VueAge='new message'
+                        // vm.$el.textContent==='new message'
+                        Vue.nextTick(function () {
+                            vm.$el.textContent==='new message'
+                        })
+
+                        // };
+
+                        // window.setInterval("test();",10000);
+                        document.getElementById("newApp").style.display="block";
+                    });
+                }
+            });
+            // });
+
+
+
+
+        });
+
+
+        function newRepeat() {
+            //$("#btn").click(function(){
+            var url = "EmpPublicnameAjaxVueQuery";
+            $.ajax({
+                url:url,
+                type:"post",
+                dataType:"json",
+                error:function(XMLHttpRequest, textStatus, errorThrown){
+                    alert(XMLHttpRequest);
+                    alert(textStatus);
+                    alert(errorThrown);
+                },
+                success:function(data){
+                    // alert("yes");
+                    $.each(data,function(idx,obj){
+                        //    var li = document.createElement("li");
+                        //   li.innerHTML = "<a>" + obj.name +"<br>"+obj.age+"<br>"+obj.sex+ "</a>";
+                        ///document.getElementById("ul1").appendChild(li);
+                        name=obj.name;
+                        age=obj.age;
+                        sex=obj.sex;
+                        // alert(name+age+sex);
+                        newdata={
+                            VueName:name,
+                            VueSex:sex,
+                            VueAge:age
+
+                        };
+                        vm.VueName=name
+                        // vm.$el.textContent==='new message'
+                        Vue.nextTick(function () {
+                            vm.$el.textContent===name
+                        })
+                        vm.VueSex=sex
+                        // vm.$el.textContent==='new message'
+                        Vue.nextTick(function () {
+                            vm.$el.textContent===sex
+                        })
+                        vm.VueAge=age
+                        // vm.$el.textContent==='new message'
+                        Vue.nextTick(function () {
+                            vm.$el.textContent===age
+                        })
+                        document.getElementById("newApp").style.display="block";
+                    });
+                }
+            });
+            // });
+
+        }
+        window.setInterval("newRepeat();",500);
+
+    </script>
+
+</head>
+<body>
+
+<div id="app">
+    <p>{{ message }}</p>
+
+    <input type="text" v-model="message"/>
+    <p>{{test}}</p>
+    <input type="text" v-model="test"/>
+</div>
+
+<div id="newApp">
+    <p>{{VueName}}</p>
+    <p>{{VueAge}}</p>
+    <p>{{VueSex}}</p>
+</div>
+<script>
+    var exampleData={
+        message:'ii',
+        test:'ll'
+    }
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    new Vue({
+        el: '#app',
+        data: exampleData
+
+    })
+    var planData={
+        VueName: "name",
+        VueAge: "20",
+        VueSex: "男"
+    }
+    /*
+    new Vue({
+        el:'#newApp',
+        data:planData
+    })
+    */
+</script>
+
+
+<ul id="ul1"></ul>
+<input type="button" value="循环" id="btn"/>
+
+<div class="container">
+<ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li>&nbsp;</li>
+    <li class="active"><a href="#">1</a></li>
+    <li>&nbsp;</li>
+    <li class="disabled"><a href="#">2</a></li>
+    <li>&nbsp;</li>
+    <li><a href="#">3</a></li>
+    <li>&nbsp;</li>
+    <li><a href="#">4</a></li>
+    <li>&nbsp;</li>
+    <li><a href="#">5</a></li>
+    <li>&nbsp;</li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+</div>
+
+</body>
+</html>

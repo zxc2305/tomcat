@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="..\CSS\mystyle.css" />
+</head>
+
+<body>
+<div class="main" id="main">此处显示  class "main" id "main" 的内容
+<div class="header" id="header">此处显示  class "header" id "header" 的内容</div>
+<div class="menu" id="menu">此处显示  class "menu" id "menu" 的内容</div>
+<div class="left" id="left">此处显示  class "left" id "left" 的内容</div>
+<div class="content" id="content">此处显示  class "content" id "content" 的内容</div>
+<div class="under" id="under">此处显示  class "under" id "under" 的内容</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID" version="4.0">
+    <display-name>My</display-name>
+    <welcome-file-list>
+        <welcome-file>sevenDimension.html</welcome-file>
+
+        <welcome-file>index.html</welcome-file>
+
+
+
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>weixin </servlet-name>
+        <servlet-class>weixin.weixin </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>weixin </servlet-name>
+        <url-pattern>/weixin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyServlet </servlet-name>
+        <servlet-class>com.Yd.MyServlet </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet </servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myQuery </servlet-name>
+        <servlet-class>Show_To_Jsp.myQuery </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>myQuery </servlet-name>
+        <url-pattern>/myQuery</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ajaxQuery </servlet-name>
+        <servlet-class>Show_To_Jsp.ajaxQuery </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ajaxQuery </servlet-name>
+        <url-pattern>/ajaxQuery</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>newAjaxQuery </servlet-name>
+        <servlet-class>Show_To_Jsp.newAjaxQuery </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>newAjaxQuery </servlet-name>
+        <url-pattern>/newAjaxQuery</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>newAjaxVueQuery </servlet-name>
+        <servlet-class>Show_To_Jsp.newAjaxVueQuery </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>newAjaxVueQuery </servlet-name>
+        <url-pattern>/newAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>welcomeQuery </servlet-name>
+        <servlet-class>Show_To_Jsp.welcomeQuery </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>welcomeQuery </servlet-name>
+        <url-pattern>/welcomeQuery</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>MyClientQuery</servlet-name>
+        <servlet-class>EmpClient.MyClientQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyClientQuery</servlet-name>
+        <url-pattern>/MyClientQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpClientAjaxVueQuery</servlet-name>
+        <servlet-class>EmpClient.EmpClientAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpClientAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpClientAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyClientdetailQuery</servlet-name>
+        <servlet-class>EmpClientdetail.MyClientdetailQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyClientdetailQuery</servlet-name>
+        <url-pattern>/MyClientdetailQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpClientdetailAjaxVueQuery</servlet-name>
+        <servlet-class>EmpClientdetail.EmpClientdetailAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpClientdetailAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpClientdetailAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyConsultantQuery</servlet-name>
+        <servlet-class>EmpConsultant.MyConsultantQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyConsultantQuery</servlet-name>
+        <url-pattern>/MyConsultantQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpConsultantAjaxVueQuery</servlet-name>
+        <servlet-class>EmpConsultant.EmpConsultantAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpConsultantAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpConsultantAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyCourseQuery</servlet-name>
+        <servlet-class>EmpCourse.MyCourseQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyCourseQuery</servlet-name>
+        <url-pattern>/MyCourseQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpCourseAjaxVueQuery</servlet-name>
+        <servlet-class>EmpCourse.EmpCourseAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpCourseAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpCourseAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyInstallQuery</servlet-name>
+        <servlet-class>EmpInstall.MyInstallQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyInstallQuery</servlet-name>
+        <url-pattern>/MyInstallQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpInstallAjaxVueQuery</servlet-name>
+        <servlet-class>EmpInstall.EmpInstallAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpInstallAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpInstallAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyJoinQuery</servlet-name>
+        <servlet-class>EmpJoin.MyJoinQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyJoinQuery</servlet-name>
+        <url-pattern>/MyJoinQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpJoinAjaxVueQuery</servlet-name>
+        <servlet-class>EmpJoin.EmpJoinAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpJoinAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpJoinAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyNoticeQuery</servlet-name>
+        <servlet-class>EmpNotice.MyNoticeQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyNoticeQuery</servlet-name>
+        <url-pattern>/MyNoticeQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpNoticeAjaxVueQuery</servlet-name>
+        <servlet-class>EmpNotice.EmpNoticeAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpNoticeAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpNoticeAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyPublicnameQuery</servlet-name>
+        <servlet-class>EmpPublicname.MyPublicnameQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyPublicnameQuery</servlet-name>
+        <url-pattern>/MyPublicnameQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpPublicnameAjaxQuery</servlet-name>
+        <servlet-class>EmpPublicname.EmpPublicnameAjaxQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpPublicnameAjaxQuery</servlet-name>
+        <url-pattern>/EmpPublicnameAjaxQuery</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>EmpPublicnameAjaxVueQuery</servlet-name>
+        <servlet-class>EmpPublicname.EmpPublicnameAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpPublicnameAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpPublicnameAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyResearchQuery</servlet-name>
+        <servlet-class>EmpResearch.MyResearchQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyResearchQuery</servlet-name>
+        <url-pattern>/MyResearchQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpResearchAjaxVueQuery</servlet-name>
+        <servlet-class>EmpResearch.EmpResearchAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpResearchAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpResearchAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyReturnsQuery</servlet-name>
+        <servlet-class>EmpReturns.MyReturnsQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyReturnsQuery</servlet-name>
+        <url-pattern>/MyReturnsQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpReturnsAjaxVueQuery</servlet-name>
+        <servlet-class>EmpReturns.EmpReturnsAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpReturnsAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpReturnsAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyRoleQuery</servlet-name>
+        <servlet-class>EmpRole.MyRoleQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyRoleQuery</servlet-name>
+        <url-pattern>/MyRoleQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpRoleAjaxVueQuery</servlet-name>
+        <servlet-class>EmpRole.EmpRoleAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpRoleAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpRoleAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>
+        <servlet-name>MyStatisticsQuery</servlet-name>
+        <servlet-class>EmpStatistics.MyStatisticsQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyStatisticsQuery</servlet-name>
+        <url-pattern>/MyStatisticsQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpStatisticsAjaxVueQuery</servlet-name>
+        <servlet-class>EmpStatistics.EmpStatisticsAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpStatisticsAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpStatisticsAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyTestQuery</servlet-name>
+        <servlet-class>EmpTest.MyTestQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyTestQuery</servlet-name>
+        <url-pattern>/MyTestQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpTestAjaxVueQuery</servlet-name>
+        <servlet-class>EmpTest.EmpTestAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpTestAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpTestAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>MyTest_copeQuery</servlet-name>
+        <servlet-class>EmpTest_cope.MyTest_copeQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>MyTest_copeQuery</servlet-name>
+        <url-pattern>/MyTest_copeQuery</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EmpTest_copeAjaxVueQuery</servlet-name>
+        <servlet-class>EmpTest_cope.EmpTest_copeAjaxVueQuery</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EmpTest_copeAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpTest_copeAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

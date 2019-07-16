@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)./PersonnelM -->
+<html data-dpr="1" style="font-size: 52.2667px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="content-language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="企业站,关键字">
+    <meta name="description" content="企业站,关键字">
+    <meta name="author" content="杭州一丢丢管理咨询信息技术有限公司-高端网站建设-http://www.donniy.com">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>杭州久另其文化创意有限公司</title>
+    <link href="./favicon.ico" rel="shortcut icon">
+    <link href="./PersonnelME_files/styleM" rel="stylesheet">
+
+    <script src="./PersonnelME_files/jqueryM"></script>
+
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].init();
+    </script>
+    <script src="./PersonnelME_files/share.js"></script><script src="./PersonnelME_files/share.js"></script><link rel="stylesheet" href="./PersonnelME_files/share_style2_24.css"></head>
+<body style="font-size: 18px;">
+
+
+<header class="header">
+    <div class="main-wrap f-cb">
+        <h1 class="fl logo">
+            <a href="./IndexME.html">
+                <img src="./PersonnelME_files/logo.jpg" alt="">
+            </a>
+        </h1>
+        <div class="fr nav-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <a class="en fr" target="_blank" href="./">中文</a>
+    </div>
+    <div class="sub-menu">
+        <ul>
+            <li><a class="tit" href="./IndexME.html">Home</a></li>
+            <li>
+                <span class="tit sub-tit">About us</span>
+                <div class="sec-list">
+                    <p><a href="./AboutME.html" title="">Who we are</a></p>
+                    <p><a href="./IdeaME.html" title="">Idea</a></p>
+                    <p><a href="./TeamME.html" title="">Our team</a></p>
+                    <!-- <p><a href="/StrategyME.html" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactME.html" title="">Contact us</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Our service</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceME.html" title="">Service</a></p>
+                    <p><a href="./CaseME.html" title="">Case</a></p>
+                    <p><a href="./ResearchME.html" title="">Research Center</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">News center</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListME.html" title="">News</a></p>
+                    <p><a href="./MagazineME.html" title="">Magazines</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">We need you</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitME.html" title="">Recruitment Information</a></p>
+                    <p><a href="./PersonnelME.html" title="">Talent view</a></p>
+                    <p><a href="./OccupationME.html" title="">Career development</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Social responsibility</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyME.html" title="">Social responsibility</a></p>
+                    <p><a href="./PublicME.html" title="">Public welfare</a></p>
+                    <p><a href="./PartyME.html" title="">Party branch</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorME.html">Investor relations</a></li>
+        </ul>
+    </div>
+    <span class="m-close-search"></span>
+</header>
+<div class="search-bg"></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+    $(function(){
+        $("header .nav-btn").on('click', function() {
+            var _this = $(this);
+            if (!$(this).hasClass('hover')) {
+                $(this).addClass('hover');
+                $(this).children('.line1').stop(true,true).transition({rotate: 45}, 300);
+                $(this).children('.line2').stop(true,true).fadeOut(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: -45}, 300,function(){
+                    _this.addClass('active');
+                });
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeIn();
+                $("header .list-cont").addClass('active');
+                $("body,html").stop(true,true).addClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeIn();
+            }else{
+                $(this).removeClass('hover');
+                $(this).removeClass('active');
+                $(this).children('.line1').stop(true,true).transition({rotate: 0}, 300);
+                $(this).children('.line2').stop(true,true).fadeIn(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: 0}, 300);
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeOut();
+                $("header .list-cont").removeClass('active');
+                $("body,html").stop(true,true).removeClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeOut();
+            }
+        });
+        $("header .sub-menu .sub-tit").on('click', function() {
+            if ($(this).siblings('.sec-list').is(':hidden')){
+                $(this).addClass('on');
+                $(this).siblings('.sec-list').stop().slideDown();
+                $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+            }else{
+                $(this).removeClass('on');
+                $(this).siblings('.sec-list').stop().slideUp();
+            }
+        });
+        $("header .search-btn").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().show();
+        });
+        $(".m-close-search").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().hide();
+        })
+    })
+</script>
+
+
+
+
+
+
+<div class="banner-nav">
+    <div class="n-banner" style="background: url(StorageFiles/2017/5/23/91f5cd79-071e-459f-af38-f0e04fd991b6.jpg) no-repeat center center;">
+        <div class="top">
+            <span class="line fl"></span><span class="sp1 fl">We need you</span>
+        </div>
+        <!--  <div class="square_container">
+             <div class="square_liner square_liner_1"></div>
+             <div class="square_liner square_liner_2"></div>
+             <div class="square_liner square_liner_3"></div>
+             <div class="square_liner square_liner_4"></div>
+             <div class="square">
+                 <span>人</span>
+                 <span>才</span>
+                 <span>制</span>
+                 <span>度</span>
+                 <span class="s6">
+                     <img src="/Resources/Web/Images/pic6.png" alt="">
+                 </span>
+             </div>
+         </div> -->
+    </div>
+
+
+    <div class="about-nav">
+        <div class="tit sub-tit f-cb">
+            <span class="fl">人才观</span>
+            <div class="ac-ln-menucta fr"></div>
+        </div>
+        <ul class="sec-list f-cb">
+            <li>
+                <a href="./RecruitME.html" title="">Recruitment Information</a>
+            </li>
+            <li>
+                <a href="./PersonnelME.html" title="">Talent view</a>
+            </li>
+            <li>
+                <a href="./OccupationME.html" title="">Career development</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(function(){
+            $(".about-nav .sub-tit").on('click', function() {
+                if ($(this).siblings('.sec-list').is(':hidden')){
+                    $(this).addClass('on');
+                    $(this).siblings('.sec-list').stop().slideDown();
+                    $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+                }else{
+                    $(this).removeClass('on');
+                    $(this).siblings('.sec-list').stop().slideUp();
+                }
+            });
+        })
+    </script>
+
+</div>
+<div class="n-personnel">
+    <div class="lista pa6">
+        <div class="n-top" style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="h"><span class="i">ATM</span>OSPHERE</div>
+            <!-- <div class="line"></div>
+            <p>人才制度</p> -->
+        </div>
+        <div class="dl-x f-cb" style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="dd fr">
+                <img src="./PersonnelME_files/7a72aa34-cbc0-488b-ad41-1f1d238a1da1.jpg_868x419.jpeg" alt="">
+            </div>
+            <div class="dt fl">
+                <div class="h">
+                    <p>
+                        Sincere / Professional / Passion / Diligence<br>
+                        Respect / Inspire / Advocate team / Go the extra mile<br>
+                    </p><div>
+                    <br>
+                </div>
+                    <p></p>
+                    <p>
+                        <br>
+                    </p>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="listb f9-bg">
+        <div class="wul w1200 f-cb">
+            <ul>
+                <li>
+                    <div class="xs">Talent criteria</div>
+                    <div class="p">
+                        Integrity/ Professional/ Passionate/ Diligence
+                    </div>
+                </li>
+                <li>
+                    <div class="xs">Talent behavior</div>
+                    <div class="p">
+                        Respect /Inspire /Go the extra mile
+                    </div>
+                </li>
+                <li>
+                    <div class="xs">Teamwork</div>
+                    <div class="p">
+                        Collaborative innovation/ Open Communicate / Diligence and pragmatism/Understanding
+                    </div>
+                </li>
+                <li>
+                    <div class="xs">Opportunity for development </div>
+                    <div class="p">
+                        Equal / Recognition / Respect
+                    </div>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <div class="xs">Training and Development</div>
+                    <div class="p">
+                        Induction/Leadership Program/ Professional training /companies visiting/ communication
+                    </div>
+                </li>
+                <li>
+                    <div class="xs">Dareer development</div>
+                    <div class="p">
+                        Encourage internal entrepreneurship/ Be bold / train young and new talent
+                    </div>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <div class="xs">Long-term incentive plan</div>
+                    <div class="p">
+                        Profit sharing/ Stock option incentive plan/ The annual bonus
+                    </div>
+                </li>
+                <li>
+                    <div class="xs">Welfare</div>
+                    <div class="p">
+                        Corporate welfare: The commercial insurance/ 10-year achievement award/service award/family day holiday/ cafeteria /gym/ oversea travel Legal Welfare: Five social insurance and one housing fund (endowment insurance/medical insurance/unemployment insurance/employment injury insurance/maternity insurance/Housing Provident Fund)/statutory annual leave/women's exclusive leave (wedding leave/antenatal leave/maternity leave)
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<link href="./PersonnelME_files/swiperM" rel="stylesheet">
+
+<script src="./PersonnelME_files/swiper-minM"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $(".recruit-top .ulbox").width($(".recruit-top .ulbox .li").length*4.5 + 'rem');
+
+        $(".about-nav .sub-tit span").text("人才观");
+        setTimeout(function(){
+            Enter($('.n-personnel .lista .n-top'),"Y","0",1,850,200,function(){
+                Enter($('.n-personnel .lista .dl-x'),"Y","0",1,850)
+            })
+        },500)
+        $(window).scroll(function(){
+            var top=$(window).scrollTop();
+            var h=$(window).height();
+            if(($('.n-personnel .listb').offset().top-2*h/2.5)<=top){
+                Enter($('.n-personnel .listb'),"Y","0",1,850)
+            }
+        })
+    })
+</script>
+
+
+
+<footer>
+    <div class="sub-menu">
+        <ul>
+            <li>
+                <span class="tit sub-tit">About us</span>
+                <div class="sec-list">
+                    <p><a href="./AboutME.html" title="">Who we are</a></p>
+                    <p><a href="./IdeaME.html" title="">Idea</a></p>
+                    <p><a href="./TeamME.html" title="">Our team</a></p>
+                    <!-- <p><a href="/StrategyME.html" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactME.html" title="">Contact us</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Our service</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceME.html" title="">Service</a></p>
+                    <p><a href="./CaseME.html" title="">Case</a></p>
+                    <p><a href="./ResearchME.html" title="">Research Center</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">News center</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListME.html" title="">News</a></p>
+                    <p><a href="./MagazineME.html" title="">Magazines</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">We need you</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitME.html" title="">Recruitment Information</a></p>
+                    <p><a href="./PersonnelME.html" title="">Talent view</a></p>
+                    <p><a href="./OccupationME.html" title="">Career development</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Social responsibility</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyME.html" title="">Social responsibility</a></p>
+                    <p><a href="./PublicME.html" title="">Public welfare</a></p>
+                    <p><a href="./PartyME.html" title="">Party branch</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorME.html">Investor relations</a></li>
+        </ul>
+    </div>
+    <div class="botmid">
+        <div class="bdsharebuttonbox bdshare-button-style2-24" data-bd-bind="1562669205588">
+            <a href="./PersonnelM#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="./PersonnelM#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        </div>
+    </div>
+    <div class="bot">
+        <p>
+            Copyright © SevenDimension Media Co. Ltd. All right reserved <br>
+            <a target="_blank" title="Powered by" href="http://www.donniy.com/" class="t-c">Powered by</a>：
+            <a target="_blank" title="DONNIY" href="http://www.donniy.com/" class="t-c">DONNIY</a>
+        </p>
+    </div>
+</footer>
+<script>
+    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){})
+    $("footer .sub-menu .sub-tit").on('click', function() {
+        if ($(this).siblings('.sec-list').is(':hidden')){
+            $(this).addClass('on');
+            $(this).siblings('.sec-list').stop().slideDown();
+            $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+        }else{
+            $(this).removeClass('on');
+            $(this).siblings('.sec-list').stop().slideUp();
+        }
+    });
+</script>
+
+
+
+
+
+</body></html>
+

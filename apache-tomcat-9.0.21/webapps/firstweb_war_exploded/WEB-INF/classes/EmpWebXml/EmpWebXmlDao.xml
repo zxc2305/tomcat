@@ -1,0 +1,25 @@
+    <servlet>
+        <servlet-name>MyClientQuery</servlet-name>
+        <servlet-class>EmpClient.MyClientQuery</servlet-class>
+    </servlet>
+
+ 
+    <servlet-mapping>
+        <servlet-name>MyClientQuery</servlet-name>
+        <url-pattern>/MyClientQuery</url-pattern>
+    </servlet-mapping>
+ 
+ 
+    <servlet>
+        <servlet-name>EmpClientAjaxVueQuery</servlet-name>
+        <servlet-class>EmpClient.EmpClientAjaxVueQuery</servlet-class>
+    </servlet>
+
+ 
+    <servlet-mapping>
+        <servlet-name>EmpClientAjaxVueQuery</servlet-name>
+        <url-pattern>/EmpClientAjaxVueQuery</url-pattern>
+    </servlet-mapping>
+ 
+ 
+

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)./CaseM -->
+<html data-dpr="1" style="font-size: 52.2667px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="content-language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="企业站,关键字">
+    <meta name="description" content="企业站,关键字">
+    <meta name="author" content="杭州一丢丢管理咨询信息技术有限公司-高端网站建设-http://www.donniy.com">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>杭州久另其文化创意有限公司</title>
+    <link href="./favicon.ico" rel="shortcut icon">
+    <link href="./CaseME_files/styleM" rel="stylesheet">
+
+    <script src="./CaseME_files/jqueryM"></script>
+
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].init();
+    </script>
+    <script src="./CaseME_files/share.js"></script><script src="./CaseME_files/share.js"></script><link rel="stylesheet" href="./CaseME_files/share_style2_24.css"></head>
+<body style="font-size: 18px;">
+
+
+<header class="header">
+    <div class="main-wrap f-cb">
+        <h1 class="fl logo">
+            <a href="./IndexME.html">
+                <img src="./CaseME_files/logo.jpg" alt="">
+            </a>
+        </h1>
+        <div class="fr nav-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <a class="en fr" target="_blank" href="./">中文</a>
+    </div>
+    <div class="sub-menu">
+        <ul>
+            <li><a class="tit" href="./IndexME.html">Home</a></li>
+            <li>
+                <span class="tit sub-tit">About us</span>
+                <div class="sec-list">
+                    <p><a href="./AboutME.html" title="">Who we are</a></p>
+                    <p><a href="./IdeaME.html" title="">Idea</a></p>
+                    <p><a href="./TeamME.html" title="">Our team</a></p>
+                    <!-- <p><a href="/StrategyME.html" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactME.html" title="">Contact us</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Our service</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceME.html" title="">Service</a></p>
+                    <p><a href="./CaseME.html" title="">Case</a></p>
+                    <p><a href="./ResearchME.html" title="">Research Center</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">News center</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListME.html" title="">News</a></p>
+                    <p><a href="./MagazineME.html" title="">Magazines</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">We need you</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitME.html" title="">Recruitment Information</a></p>
+                    <p><a href="./PersonnelME.html" title="">Talent view</a></p>
+                    <p><a href="./OccupationME.html" title="">Career development</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Social responsibility</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyME.html" title="">Social responsibility</a></p>
+                    <p><a href="./PublicME.html" title="">Public welfare</a></p>
+                    <p><a href="./PartyME.html" title="">Party branch</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorME.html">Investor relations</a></li>
+        </ul>
+    </div>
+    <span class="m-close-search"></span>
+</header>
+<div class="search-bg"></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+    $(function(){
+        $("header .nav-btn").on('click', function() {
+            var _this = $(this);
+            if (!$(this).hasClass('hover')) {
+                $(this).addClass('hover');
+                $(this).children('.line1').stop(true,true).transition({rotate: 45}, 300);
+                $(this).children('.line2').stop(true,true).fadeOut(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: -45}, 300,function(){
+                    _this.addClass('active');
+                });
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeIn();
+                $("header .list-cont").addClass('active');
+                $("body,html").stop(true,true).addClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeIn();
+            }else{
+                $(this).removeClass('hover');
+                $(this).removeClass('active');
+                $(this).children('.line1').stop(true,true).transition({rotate: 0}, 300);
+                $(this).children('.line2').stop(true,true).fadeIn(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: 0}, 300);
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeOut();
+                $("header .list-cont").removeClass('active');
+                $("body,html").stop(true,true).removeClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeOut();
+            }
+        });
+        $("header .sub-menu .sub-tit").on('click', function() {
+            if ($(this).siblings('.sec-list').is(':hidden')){
+                $(this).addClass('on');
+                $(this).siblings('.sec-list').stop().slideDown();
+                $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+            }else{
+                $(this).removeClass('on');
+                $(this).siblings('.sec-list').stop().slideUp();
+            }
+        });
+        $("header .search-btn").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().show();
+        });
+        $(".m-close-search").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().hide();
+        })
+    })
+</script>
+
+
+
+
+
+
+<div class="new-top f-cb">
+    <div class="f-cb">
+        <!-- <span class="sp1 fl">成功案例</span> --><span class="sp2 fl"><span class="i">CASE </span> SHARING</span>
+    </div>
+    <div class="case-form">
+        <form action="" class="f-cb">
+            <select name="" id="" class="fl">
+                <option id="tag" name="tag" value="媒介">媒介</option>
+                <option id="tag" name="tag" value="影视">影视</option>
+                <option id="tag" name="tag" value="创意">创意</option>
+
+            </select>
+            <input class="inputa fl" type="text" id="keyword" name="keyword">
+            <input type="button" class="submit fr" id="button" value=" ">
+        </form>
+    </div>
+</div>
+<div class="n-case">
+    <div class="case-list f-cb">
+        <div class="ulbox" id="container" style="height: 1092px;">
+            <div class="libox f-cb" style="width: 173.047px; left: 0px; top: 5px; position: absolute; transform: translate(0px, 0px); opacity: 1;">
+                <a href="./CaseInfoM?id=48b7feb6-6e2e-44bf-bb6d-edc4938517a7" title="">
+                    <div class="wimg">
+                        <img class="imgbox" src="./CaseME_files/4d017e26-afce-4f05-b771-802cbdacb364.jpg" alt="">
+                    </div>
+                    <div class="imgbot f-cb">
+                        <h2>“0到8848”新福特撼路者飞越巅峰</h2>
+                        <div class="p">
+                            <p>“征服Everest，超越Everest”，0到8848，新福特撼路者飞越巅峰珠峰发布会</p>
+                        </div>
+                        <em>2017-06-01</em>
+                        <div class="ul f-cb">
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="libox f-cb" style="width: 173.047px; left: 193.5px; top: 5px; position: absolute; transform: translate(0px, 0px); opacity: 1;">
+                <a href="./CaseInfoM?id=0ae335f9-9fa6-47e2-81a6-e84c870753fa" title="">
+                    <div class="wimg">
+                        <img class="imgbox" src="./CaseME_files/46bfca8c-3b1c-4be1-87f0-72e27269828c.png" alt="">
+                    </div>
+                    <div class="imgbot f-cb">
+                        <h2>滴滴出行“五大安全科技”</h2>
+                        <div class="p">
+                            <p>以内容为基础，通过明星效应、软性植入，让消费者轻松了解滴滴出行五大安全科技带来的安全和便利，提升消费者对滴滴出行的信任度，并主动去利用滴滴进行出行。</p>
+                        </div>
+                        <em>2017-09-28</em>
+                        <div class="ul f-cb">
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="libox f-cb" style="width: 173.047px; left: 0px; top: 250px; position: absolute; transform: translate(0px, 0px); opacity: 1;">
+                <a href="./CaseInfoM?id=a3fb375d-e55e-4fe1-aefe-8d06e30f9d14" title="">
+                    <div class="wimg">
+                        <img class="imgbox" src="./CaseME_files/00a05d23-1657-47e1-b363-1083cb3d5ef1.png" alt="">
+                    </div>
+                    <div class="imgbot f-cb">
+                        <h2>KFC肯德基“四宝闹新春”</h2>
+                        <div class="p">
+                            <p>以四宝玩具为中心，利用最恰当最新颖的内容形式，刺激消费者进行互动，增加产品曝光量，并对四宝玩具轻松种草，最终提高新年快乐儿童套餐的声量及销量。</p>
+                        </div>
+                        <em>2017-09-25</em>
+                        <div class="ul f-cb">
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="libox f-cb" style="width: 173.047px; left: 193.5px; top: 360px; position: absolute; transform: translate(0px, 0px); opacity: 1;">
+                <a href="./CaseInfoM?id=92e93163-2cea-4a4e-9f3e-581d3d2861c2" title="">
+                    <div class="wimg">
+                        <img class="imgbox" src="./CaseME_files/ccf54003-2f89-40e9-8201-7a0c6b7e7fad.png" alt="">
+                    </div>
+                    <div class="imgbot f-cb">
+                        <h2>KFC肯德基“一鹿过瘾”</h2>
+                        <div class="p">
+                            <p>充分利用代言人效果和影响力,吸引庞大粉丝群,通过核心传播源的线上传播话题性，进一步影响易感人群,向消费者传播吃过瘾炸鸡桶的全新口感和benefit</p>
+                        </div>
+                        <em>2017-09-25</em>
+                        <div class="ul f-cb">
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="libox f-cb" style="width: 173.047px; left: 0px; top: 478px; position: absolute; transform: translate(0px, 0px); opacity: 1;">
+                <a href="./CaseInfoM?id=3dd5515a-c0c6-4dce-8d08-d316c271a528" title="">
+                    <div class="wimg">
+                        <img class="imgbox" src="./CaseME_files/d01f5015-4d3d-4253-ac66-a4dd23fdd061.jpg" alt="">
+                    </div>
+                    <div class="imgbot f-cb">
+                        <h2>撼路者“小纸箱，大天地” 创意互动纸箱</h2>
+                        <div class="p">
+                            <p>“小纸箱，大天地”，江铃福特撼路者创意互动之纸箱变车模，与你共享欢乐时光</p>
+                        </div>
+                        <em>2017-06-01</em>
+                        <div class="ul f-cb">
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="libox f-cb" style="width: 173.047px; left: 0px; top: 723px; position: absolute; transform: translate(0px, 0px); opacity: 1;">
+                <a href="./CaseInfoM?id=3d36264e-3e99-4c9a-86b0-8a8c027b070d" title="">
+                    <div class="wimg">
+                        <img class="imgbox" src="./CaseME_files/87e34fb4-82e1-4964-a8af-f42a2226a6c6.jpg" alt="">
+                    </div>
+                    <div class="imgbot f-cb">
+                        <h2>顾家家居定制化明星家装改造网综《WULI屋里变》</h2>
+                        <div class="p">
+                            <p>为顾家量身打造内容营销新模式，“草屋变宫殿，WULI屋里变”，定制化内容+情景式营销，助品牌走近年轻人</p>
+                        </div>
+                        <em>2017-06-01</em>
+                        <div class="ul f-cb">
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="morebox">Read More</div>
+</div>
+<link href="./CaseME_files/swiperM" rel="stylesheet">
+
+<script src="./CaseME_files/blocksit"></script>
+
+<script type="text/javascript">
+    $(function(){
+        //$(".about-nav .sub-tit span").text("联系我们");
+        $("#container").BlocksIt({
+            numOfCol:2,
+            offsetX: 5,
+            offsetY: 5
+        });
+        // $(".inputa").focus(function(){
+        //     $(this).parents(".case-form").stop(true,true).animate({"width":"3.2rem"},500)
+        //     $(this).stop(true,true).animate({"width":"1.4rem"},500)
+        // });
+        // $(".inputa").blur(function(){
+        //     $(this).parents(".case-form").stop(true,true).animate({"width":"3rem"},500)
+        //     $(this).stop(true,true).animate({"width":"1.2rem"},500)
+        // });
+        setTimeout(function(){
+            var k = $(".n-case .libox").length;
+            Enter($('.n-case .libox').eq(0),"Y","0",k,750,150);
+        },500)
+
+        var NewUrl = "/Ajax_CaseM"
+        var p = 2;
+        var hasmore = true;
+        var allpage = "3";
+        if (!hasmore) {
+            $('.morebox').hide();
+            return false;
+        }
+        $('.morebox').click(function () {
+            var _this = $(this);
+            $.ajax({
+                url: NewUrl,
+                data: { page: p },
+                cache: false,
+                dataType: 'html',
+                beforeSend: function(){
+                    $(this).html("加载更多...")
+                },
+                success: function (html) {
+                    var k1 = $(".n-case .libox").length;
+                    console.log(k1)
+                    Enter($('.n-case .libox').eq(k1-1),"Y","0",4,750,150)
+                    _this.siblings('.case-list').find("#container").append(html);
+                    $("#container").BlocksIt({
+                        numOfCol:2,
+                        offsetX: 5,
+                        offsetY: 5
+                    });
+                    p = p + 1;
+                    if (p > allpage) {
+                        $('.morebox').hide();
+                        hasmore = false;
+                    };
+                }
+            });
+            return false;
+        });
+
+        $("#button").click(function () {
+            var tag = $("select[name='tag'] option:selected").text();
+            var keyword = $("#keyword").val();
+            $.ajax({
+                url: '/SearchCaseM',
+                data: { tag: tag, keyword: keyword },
+                dataType: 'html',
+                success: function (html) {
+                    $("#container").empty();
+                    $("#container").append(html);
+
+                }
+            })
+        })
+    })
+</script>
+
+
+
+<footer>
+    <div class="sub-menu">
+        <ul>
+            <li>
+                <span class="tit sub-tit">About us</span>
+                <div class="sec-list">
+                    <p><a href="./AboutME.html" title="">Who we are</a></p>
+                    <p><a href="./IdeaME.html" title="">Idea</a></p>
+                    <p><a href="./TeamME.html" title="">Our team</a></p>
+                    <!-- <p><a href="/StrategyME.html" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactME.html" title="">Contact us</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Our service</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceME.html" title="">Service</a></p>
+                    <p><a href="./CaseME.html" title="">Case</a></p>
+                    <p><a href="./ResearchME.html" title="">Research Center</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">News center</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListME.html" title="">News</a></p>
+                    <p><a href="./MagazineME.html" title="">Magazines</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">We need you</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitME.html" title="">Recruitment Information</a></p>
+                    <p><a href="./PersonnelME.html" title="">Talent view</a></p>
+                    <p><a href="./OccupationME.html" title="">Career development</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">Social responsibility</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyME.html" title="">Social responsibility</a></p>
+                    <p><a href="./PublicME.html" title="">Public welfare</a></p>
+                    <p><a href="./PartyME.html" title="">Party branch</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorME.html">Investor relations</a></li>
+        </ul>
+    </div>
+    <div class="botmid">
+        <div class="bdsharebuttonbox bdshare-button-style2-24" data-bd-bind="1562669059056">
+            <a href="./CaseM#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="./CaseM#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        </div>
+    </div>
+    <div class="bot">
+        <p>
+            Copyright © SevenDimension Media Co. Ltd. All right reserved <br>
+            <a target="_blank" title="Powered by" href="http://www.donniy.com/" class="t-c">Powered by</a>：
+            <a target="_blank" title="DONNIY" href="http://www.donniy.com/" class="t-c">DONNIY</a>
+        </p>
+    </div>
+</footer>
+<script>
+    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){})
+    $("footer .sub-menu .sub-tit").on('click', function() {
+        if ($(this).siblings('.sec-list').is(':hidden')){
+            $(this).addClass('on');
+            $(this).siblings('.sec-list').stop().slideDown();
+            $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+        }else{
+            $(this).removeClass('on');
+            $(this).siblings('.sec-list').stop().slideUp();
+        }
+    });
+</script>
+
+
+
+
+
+</body></html>
+

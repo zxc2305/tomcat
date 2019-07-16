@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)./MagazineM -->
+<html data-dpr="1" style="font-size: 179.867px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="content-language" content="zh-CN">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="企业站,关键字">
+    <meta name="description" content="企业站,关键字">
+    <meta name="author" content="杭州一丢丢管理咨询信息技术有限公司-高端网站建设-http://www.donniy.com">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>杭州久另其文化创意有限公司</title>
+    <link href="./favicon.ico" rel="shortcut icon">
+    <link href="./MagazineM_files/styleM" rel="stylesheet">
+
+    <script src="./MagazineM_files/jqueryM"></script>
+
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 750;
+        window['adaptive'].init();
+    </script>
+    <script src="./MagazineM_files/share.js"></script><script src="./MagazineM_files/share.js"></script><link rel="stylesheet" href="./MagazineM_files/share_style2_24.css"></head>
+<body style="font-size: 18px;">
+
+
+<header class="header">
+    <div class="main-wrap f-cb">
+        <h1 class="fl logo">
+            <a href="./indexM.html">
+                <img src="./MagazineM_files/logo.jpg" alt="">
+            </a>
+        </h1>
+        <div class="fr nav-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <a class="en fr" target="_blank" href="./IndexME.html">en</a>
+    </div>
+    <div class="sub-menu">
+        <ul>
+            <li><a class="tit" href="./indexM.html">首页</a></li>
+            <li>
+                <span class="tit sub-tit">关于七次元</span>
+                <div class="sec-list">
+                    <p><a href="./AboutM.html" title="">公司简介</a></p>
+                    <p><a href="./IdeaM.html" title="">七次元理念</a></p>
+                    <p><a href="./TeamM.html" title="">领导团队</a></p>
+                    <!-- <p><a href="/StrategyM" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactM.html" title="">联系我们</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">我们的服务</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceM.html" title="">服务介绍</a></p>
+                    <p><a href="./CaseM.html" title="">成功案例</a></p>
+                    <p><a href="./ResearchM.html" title="">研究中心</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">新闻中心</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListM.html" title="">七次元新闻</a></p>
+                    <p><a href="./MagazineM.html" title="">七次元内刊</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">我们需要你</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitM.html" title="">招聘信息</a></p>
+                    <p><a href="./PersonnelM.html" title="">人才观</a></p>
+                    <p><a href="./OccupationM.html" title="">职业发展</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">社会责任</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyM.html" title="">社会责任</a></p>
+                    <p><a href="./PublicM.html" title="">公益活动</a></p>
+                    <p><a href="./PartyM.html" title="">党建活动</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorM.html">投资者关系</a></li>
+        </ul>
+    </div>
+    <span class="m-close-search"></span>
+</header>
+<div class="search-bg"></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>
+    $(function(){
+        $("header .nav-btn").on('click', function() {
+            var _this = $(this);
+            if (!$(this).hasClass('hover')) {
+                $(this).addClass('hover');
+                $(this).children('.line1').stop(true,true).transition({rotate: 45}, 300);
+                $(this).children('.line2').stop(true,true).fadeOut(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: -45}, 300,function(){
+                    _this.addClass('active');
+                });
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeIn();
+                $("header .list-cont").addClass('active');
+                $("body,html").stop(true,true).addClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeIn();
+            }else{
+                $(this).removeClass('hover');
+                $(this).removeClass('active');
+                $(this).children('.line1').stop(true,true).transition({rotate: 0}, 300);
+                $(this).children('.line2').stop(true,true).fadeIn(300);
+                $(this).children('.line3').stop(true,true).transition({rotate: 0}, 300);
+                $(this).parent(".main-wrap").siblings('.sub-menu').stop().fadeOut();
+                $("header .list-cont").removeClass('active');
+                $("body,html").stop(true,true).removeClass('ovh-f');
+                $(".search-bg").stop(true,true).fadeOut();
+            }
+        });
+        $("header .sub-menu .sub-tit").on('click', function() {
+            if ($(this).siblings('.sec-list').is(':hidden')){
+                $(this).addClass('on');
+                $(this).siblings('.sec-list').stop().slideDown();
+                $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+            }else{
+                $(this).removeClass('on');
+                $(this).siblings('.sec-list').stop().slideUp();
+            }
+        });
+        $("header .search-btn").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().show();
+        });
+        $(".m-close-search").on('click', function() {
+            $(".search-bg,.m-search-box,.m-close-search").stop().hide();
+        })
+    })
+</script>
+
+
+
+
+
+
+<div class="new-top f-cb">
+    <div class="fl">
+        <span class="sp1">七次元内刊</span><span class="sp2"><span class="i">SEVENDIMENSION </span>Magazine</span>
+    </div>
+</div>
+<div class="n-magazine">
+    <ul class="f-cb">
+        <li style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="wimg">
+                <div class="img">
+                    <img src="./MagazineM_files/576737e5-445b-4338-bd1e-b4a0f9f965fe.png" alt="">
+                </div>
+            </div>
+            <div class="news-bot">
+                <div class="time fl">
+                    <div class="r"></div>
+                </div>
+                <div class="text">
+                    <div class="h">七次元文化58期</div>
+                    <div class="t">2018 September</div>
+                </div>
+                <a href="./StorageFiles/2019/1/14/5dca2e67-c482-4915-aaaa-f9434f258bc5.pdf" class="down"></a>
+            </div>
+        </li>
+        <li style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="wimg">
+                <div class="img">
+                    <img src="./MagazineM_files/487c908f-06fc-47a1-8655-d77a27c0dd76.png" alt="">
+                </div>
+            </div>
+            <div class="news-bot">
+                <div class="time fl">
+                    <div class="r"></div>
+                </div>
+                <div class="text">
+                    <div class="h">七次元文化57期</div>
+                    <div class="t">2017 December</div>
+                </div>
+                <a href="./StorageFiles/2019/1/14/f5a5e7af-780f-43bb-9736-79f29b3d1101.pdf" class="down"></a>
+            </div>
+        </li>
+        <li style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="wimg">
+                <div class="img">
+                    <img src="./MagazineM_files/67737ee3-6096-4f62-8653-90d31a4a35b6.jpg" alt="">
+                </div>
+            </div>
+            <div class="news-bot">
+                <div class="time fl">
+                    <div class="r">56</div>
+                </div>
+                <div class="text">
+                    <div class="h">七次元文化56期</div>
+                    <div class="t">2001 January</div>
+                </div>
+                <a href="./StorageFiles/2017/6/29/2c7fc14d-e795-40ed-82dc-a0e260960f78.pdf" class="down"></a>
+            </div>
+        </li>
+        <li style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="wimg">
+                <div class="img">
+                    <img src="./MagazineM_files/74b28ff1-dc5c-4a91-b47e-156b60e6b78d.jpg" alt="">
+                </div>
+            </div>
+            <div class="news-bot">
+                <div class="time fl">
+                    <div class="r">55</div>
+                </div>
+                <div class="text">
+                    <div class="h">七次元文化55期</div>
+                    <div class="t">2001 January</div>
+                </div>
+                <a href="./StorageFiles/2017/5/15/10f187af-fb58-457e-b514-3f1933f6e989.pdf" class="down"></a>
+            </div>
+        </li>
+        <li style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="wimg">
+                <div class="img">
+                    <img src="./MagazineM_files/14c435cd-63cc-47c2-8e52-4a1dbeb56c1c.jpg" alt="">
+                </div>
+            </div>
+            <div class="news-bot">
+                <div class="time fl">
+                    <div class="r">54</div>
+                </div>
+                <div class="text">
+                    <div class="h">七次元文化54期</div>
+                    <div class="t">2001 January</div>
+                </div>
+                <a href="./StorageFiles/2017/5/15/45568e00-d171-47cf-8f53-b46fceda4f9c.pdf" class="down"></a>
+            </div>
+        </li>
+        <li style="transform: translate(0px, 0px); opacity: 1;">
+            <div class="wimg">
+                <div class="img">
+                    <img src="./MagazineM_files/047d3923-3247-4807-86e7-d66b18a836f4.jpg" alt="">
+                </div>
+            </div>
+            <div class="news-bot">
+                <div class="time fl">
+                    <div class="r">53</div>
+                </div>
+                <div class="text">
+                    <div class="h">七次元文化53期</div>
+                    <div class="t">2017 April</div>
+                </div>
+                <a href="./StorageFiles/2017/4/14/9f3be71b-8a6e-4c27-b8cb-dcda107ceb24.pdf" class="down"></a>
+            </div>
+        </li>
+
+
+    </ul>
+    <div class="morebox">点击加载更多</div>
+</div>
+<link href="./MagazineM_files/swiperM" rel="stylesheet">
+
+<script src="./MagazineM_files/swiper-minM"></script>
+
+<script type="text/javascript">
+    $(function(){
+
+        setTimeout(function(){
+            var k = $(".n-magazine li").length;
+            Enter($('.n-magazine li').eq(0),"Y","0",k,550,150);
+        },400)
+        var NewUrl = "/Ajax_MagazineM"
+        var p = 2;
+        var hasmore = true;
+        var allpage = '1';
+        if (!hasmore) {
+            $('.morebox').hide();
+            return false;
+        }
+        $('.morebox').click(function () {
+            var _this = $(this);
+            $.ajax({
+                url: NewUrl,
+                data: { page: p },
+                cache: false,
+                dataType: 'html',
+                beforeSend: function(){
+                    $(this).html("加载更多...")
+                },
+                success: function (html) {
+                    var k1 = $(".n-magazine li").length;
+                    console.log(k1)
+                    Enter($('.n-magazine ul li').eq(k1-1),"Y","0",4,550,150)
+                    _this.siblings('ul').append(html);
+                    p = p + 1;
+                    if (p > allpage) {
+                        $('.morebox').hide();
+                        hasmore = false;
+                    };
+                }
+            });
+            return false;
+        });
+    })
+</script>
+
+
+
+<footer>
+    <div class="sub-menu">
+        <ul>
+            <li>
+                <span class="tit sub-tit">关于七次元</span>
+                <div class="sec-list">
+                    <p><a href="./AboutM.html" title="">公司简介</a></p>
+                    <p><a href="./IdeaM.html" title="">七次元理念</a></p>
+                    <p><a href="./TeamM.html" title="">领导团队</a></p>
+                    <!-- <p><a href="/StrategyM" title="">七次元战略</a></p> -->
+                    <p><a href="./ContactM.html" title="">联系我们</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">我们的服务</span>
+                <div class="sec-list">
+                    <p><a href="./ServiceM.html" title="">服务介绍</a></p>
+                    <p><a href="./CaseM.html" title="">成功案例</a></p>
+                    <p><a href="./ResearchM.html" title="">研究中心</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">新闻中心</span>
+                <div class="sec-list">
+                    <p><a href="./NewsListM.html" title="">七次元新闻</a></p>
+                    <p><a href="./MagazineM.html" title="">七次元内刊</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">我们需要你</span>
+                <div class="sec-list">
+                    <p><a href="./RecruitM.html" title="">招聘信息</a></p>
+                    <p><a href="./PersonnelM.html" title="">人才观</a></p>
+                    <p><a href="./OccupationM.html" title="">职业发展</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="tit sub-tit">社会责任</span>
+                <div class="sec-list">
+                    <p><a href="./SociologyM.html" title="">社会责任</a></p>
+                    <p><a href="./PublicM.html" title="">公益活动</a></p>
+                    <p><a href="./PartyM.html" title="">党建活动</a></p>
+                </div>
+            </li>
+            <li><a class="tit" href="./InvestorM.html">投资者关系</a></li>
+        </ul>
+    </div>
+    <div class="botmid">
+        <div class="bdsharebuttonbox bdshare-button-style2-24" data-bd-bind="1562594443353">
+            <a href="./MagazineM#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="./MagazineM#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        </div>
+    </div>
+    <div class="bot">
+        <p>
+            Copyright © 杭州久另其文化创意有限公司. All right reserved <br>
+            <a target="_blank" title="技术支持" href="http://www.donniy.com/" class="t-c">技术支持</a>：
+            <a target="_blank" title="一丢丢" href="http://www.donniy.com/" class="t-c">一丢丢</a>
+        </p>
+    </div>
+</footer>
+<script>
+    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script>
+    $(function(){})
+    $("footer .sub-menu .sub-tit").on('click', function() {
+        if ($(this).siblings('.sec-list').is(':hidden')){
+            $(this).addClass('on');
+            $(this).siblings('.sec-list').stop().slideDown();
+            $(this).parent().siblings('li').children('.sec-list').stop().slideUp().siblings('.tit').removeClass('on');
+        }else{
+            $(this).removeClass('on');
+            $(this).siblings('.sec-list').stop().slideUp();
+        }
+    });
+</script>
+
+
+
+
+
+</body></html>
+

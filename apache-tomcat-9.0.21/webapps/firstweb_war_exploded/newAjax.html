@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Insert title here</title>
+    <script src="./js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#btn").click(function(){
+                var url = "newAjaxQuery";
+                $.ajax({
+                    url:url,
+                    type:"post",
+                    dataType:"json",
+                    error:function(XMLHttpRequest, textStatus, errorThrown){
+                        alert(XMLHttpRequest);
+                        alert(textStatus);
+                        alert(errorThrown);
+                    },
+                    success:function(data){
+                        $.each(data,function(idx,obj){
+                            var li = document.createElement("li");
+                            li.innerHTML = "<a>" + obj.name + "</a>";
+                            document.getElementById("ul1").appendChild(li);
+                        });
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<ul id="ul1"></ul>
+<input type="button" value="循环" id="btn"/>
+</body>
+
+</html>

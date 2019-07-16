@@ -1,0 +1,42 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+<script src="./js/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+test1
+
+    <script>
+       // window.alert("1");
+    $(function () {
+       // alert("1");
+        var a="zlp";
+        var b=123;
+        $.ajax(
+            {
+                type:"post",
+                url:"ajaxQuery",
+                data:{name:a,
+                    pwd:b},
+                dataType:"json",
+                success:function (json) {
+                    alert(json);
+                    alert("6");
+//json
+                    //回调函数成功后执行代码
+
+                },
+                error:function(data){
+                    alert("没有得到返回！"+data);
+                }
+            }
+        )
+       // window.alert("4");
+    })
+       // window.alert("2");
+      // window.alert("3");
+</script>
+</body>
+</html>

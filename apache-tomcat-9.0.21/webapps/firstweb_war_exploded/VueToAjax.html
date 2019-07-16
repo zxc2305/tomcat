@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newVue123</title>
+    <script src="http://120.78.83.173:8080/VUE/vue.js"></script>
+    <script src="./js/jquery-2.2.0.min.js"></script>
+    <script>
+        var name;
+        var sex;
+        var age;
+       // var newdata;
+        function newRepeat() {
+            //$("#btn").click(function(){
+
+            // });
+
+        }
+
+        function inputFunction() {
+            if(document.getElementById("message").style.display != "none") {
+                document.getElementById("message").style.display = "none";
+                document.getElementById("NewMessage").style.display = "block";
+            }
+
+            if( document.getElementById("test").style.display != "block")
+            {
+                document.getElementById("test").style.display = "block";
+                document.getElementById("NewTest").style.display = "none";
+            }
+
+        }
+        function inputTypeFunction() {
+
+            if(document.getElementById("type1").style.display != "none") {
+                document.getElementById("type1").style.display = "none";
+                document.getElementById("NewType1").style.display = "block";
+            }
+
+            if( document.getElementById("type2").style.display != "block")
+            {
+                document.getElementById("type2").style.display = "block";
+                document.getElementById("NewType2").style.display = "none";
+            }
+        }
+
+        function blockFunction() {
+            if (document.getElementById("message").style.display != "block") {
+                document.getElementById("message").style.display = "block";
+                document.getElementById("NewMessage").style.display = "none";
+            }
+            if (document.getElementById("test").style.display != "none") {
+                document.getElementById("test").style.display = "none";
+                document.getElementById("NewTest").style.display = "block";
+            }
+
+        }
+            function blockTypeFunction() {
+
+                if(document.getElementById("type1").style.display != "block")
+                {
+                    document.getElementById("type1").style.display = "block";
+                    document.getElementById("NewType1").style.display = "none";
+                }
+                if(document.getElementById("type2").style.display != "none")
+                {
+                    document.getElementById("type2").style.display = "none";
+                    document.getElementById("NewType2").style.display = "block";
+                }
+        }
+
+    </script>
+    <style>
+        #NewMessage{display:none;}
+        #NewTest{display: none;}
+        #NewType1{display:none;}
+        #NewType2{display: none;}
+    </style>
+</head>
+<body>
+
+<div id="newApp">
+    <p>{{VueName}}</p>
+    <p>{{VueAge}}</p>
+    <p>{{VueSex}}</p>
+</div>
+<div id="app">
+    <div id="message" onclick="inputFunction()">
+        <p>{{ message }}</p>
+    </div>
+    <div id="NewMessage">
+    <input type="text" v-model="message"/>
+    </div>
+    <div id="test"   onclick="blockFunction()">
+    <p>{{test}}</p>
+    </div>
+    <div id="NewTest">
+    <input type="text" v-model="test"/>
+    </div>
+</div>
+<script>
+    var exampleData={
+        message:'ii',
+        test:'ll'
+    }
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    new Vue({
+        el: '#app',
+        data: exampleData
+    })
+</script>
+<div id="example">
+    <div id="NewType1">
+    <input type="text" v-model="items.type1" ref="type1"/>
+    </div>
+    <div class="show" id="type1" onclick="inputTypeFunction()">输入框一的内容：{{items.type1}}</div>
+
+    <div id="NewType2">
+    <input type="text" v-model="items.type2" ref="type2"/>
+    </div>
+
+   <div class="show" id="type2" onclick="blockTypeFunction()">输入框二的内容：{{items.type2}}</div>
+</div>
+<script>
+    // 创建一个 Vue 实例或 "ViewModel"
+    // 它连接 View 与 Model
+    var planData={
+        VueName: "name",
+        VueAge: "20",
+        VueSex: "男"
+    }
+    var vm=new Vue({
+        el: '#newApp',
+        data: planData
+
+    })
+
+    var example1 = new Vue({
+        el: '#example',
+        data: {
+            items: {
+                type1:'第一个输入框',
+                type2:'第二个输入框'
+            }
+            },
+        ready:function(){ },
+        watch:{
+            items:{
+                handler:function(val,oldval){
+                    console.log(this.$refs.type1.value);
+                    //////////////////////////////////
+                    var url = "newAjaxVueQuery";
+                    $.ajax({
+                        url:url,
+                        type:"post",
+                        dataType:"json",
+                        data:{
+                            type1:this.$refs.type1.value,
+                            type2:this.$refs.type2.value
+                        },
+                        error:function(XMLHttpRequest, textStatus, errorThrown){
+                            alert(XMLHttpRequest);
+                            alert(textStatus);
+                            alert(errorThrown);
+                        },
+                        success:function(data){
+                           // alert("yes");
+                            $.each(data,function(idx,obj){
+                                var li = document.createElement("li");
+                                li.innerHTML = "<a>" + obj.name +"<br>"+obj.age+"<br>"+obj.sex+ "</a>";
+                                ///document.getElementById("ul1").appendChild(li);
+                                name=obj.name;
+                                age=obj.age;
+                                sex=obj.sex;
+                                // alert(name+age+sex);
+                                exampleData={
+                                    VueName:name,
+                                    VueSex:sex,
+                                    VueAge:age
+
+                                };
+                                vm.VueName=name;
+                                // vm.$el.textContent==='new message'
+                                Vue.nextTick(function () {
+                                    vm.$el.textContent===name
+                                })
+                                vm.VueSex=sex;
+                                // vm.$el.textContent==='new message'
+                                Vue.nextTick(function () {
+                                    vm.$el.textContent===sex
+                                })
+                                vm.VueAge=age;
+                                // vm.$el.textContent==='new message'
+                                Vue.nextTick(function () {
+                                    vm.$el.textContent===age
+                                })
+                                document.getElementById("newApp").style.display="block";
+                            });
+                        }
+                    });
+                    //////////////////////////////////
+
+
+                    console.log(this.$refs.type2.value);
+                    },
+                deep:true
+            } },
+        methods:{
+        }
+    }) </script>
+</body>
+</html>
